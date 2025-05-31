@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import "../app/globals.css";
+import "./globals.css";
 import { Inter, Poppins } from "next/font/google";
 
 const inter = Inter({ 

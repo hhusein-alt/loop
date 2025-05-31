@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors */
+  --color-primary: #4C1D95;
+  --color-primary-light: #EDE9FE;
+  --color-text: #1E1E1E;
+  --color-background: #FFFFFF;
+  --color-accent: #A3E635;
+  
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Glassmorphism and Neo-minimalism styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for Radix UI components */
+[data-radix-tabs-trigger][data-state="active"] {
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+[data-radix-tabs-trigger] {
+  transition: all 0.2s ease-in-out;
+}
+
+[data-radix-tabs-trigger]:hover {
+  color: var(--color-primary);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3B1B6F;
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  transition: all 0.2s ease;
+}
+
+.btn-accent:hover {
+  background-color: #8CCF2E;
+  transform: translateY(-1px);
+} 
