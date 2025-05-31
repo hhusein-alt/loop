@@ -1,22 +1,6 @@
-import type { AppProps } from 'next/app';
-import "./globals.css";
-import { Inter, Poppins } from "next/font/google";
+import './globals.css'
+import type { AppProps } from 'next/app'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-body',
-});
-
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-  variable: '--font-heading',
-});
-
-export default function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <div className={`${inter.variable} ${poppins.variable}`}>
-      <Component {...pageProps} />
-    </div>
-  );
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
 } 
