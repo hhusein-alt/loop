@@ -1,94 +1,62 @@
-# LeisureHub - Leisure Center Branch Demo
+# Loop - Leisure Center Web App
 
-A modern web application for managing leisure center branches, built with Next.js, Tailwind CSS, and shadcn/ui.
+A modern web application for managing leisure center branches, built with Next.js and Tailwind CSS.
 
 ## Features
 
-- Clean, modern landing page
-- Branch selection with crowd levels and visitor information
-- User profile with social features
-- Responsive design
-- GitHub Pages deployment ready
+- 🎯 Clean, modern UI with glassmorphism design
+- 📱 Responsive layout
+- 🏢 Branch selection with real-time stats
+- 👤 User profile management
+- 🎨 Beautiful color scheme and animations
 
-## Getting Started
+## Tech Stack
 
-### Prerequisites
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- GitHub Pages for deployment
 
-- Node.js 18+ installed
-- npm or yarn package manager
+## Development
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/looplast.git
-cd looplast
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Run the development server:
+2. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Building for Production
+## Deployment
 
-To build the project for production:
+The app is configured for GitHub Pages deployment:
 
+1. Build and export the app:
 ```bash
-npm run build
-# or
-yarn build
-```
-
-### Deploying to GitHub Pages
-
-1. Push your changes to GitHub:
-```bash
-git add .
-git commit -m "Your commit message"
-git push origin main
+npm run export
 ```
 
 2. Deploy to GitHub Pages:
 ```bash
 npm run deploy
-# or
-yarn deploy
 ```
 
-The site will be available at `https://yourusername.github.io/looplast`
+The app will be available at `https://hhusein-alt.github.io/loop`
 
 ## Project Structure
 
 ```
 src/
-├── app/                 # Next.js app directory
-│   ├── page.tsx        # Landing page
-│   └── dashboard/      # Dashboard pages
-├── components/         # React components
-│   └── ui/            # UI components
-└── lib/               # Utility functions
+  ├── components/     # UI components
+  ├── pages/         # Next.js pages
+  ├── styles/        # Global styles
+  └── lib/           # Utility functions
 ```
-
-## Technologies Used
-
-- Next.js 14
-- React 19
-- Tailwind CSS
-- shadcn/ui
-- TypeScript
-- GitHub Pages
 
 ## License
 
